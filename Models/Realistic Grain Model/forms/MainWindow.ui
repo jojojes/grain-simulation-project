@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1016</width>
+    <height>712</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="6" column="0" colspan="5">
+     <widget class="QVTKOpenGLNativeWidget" name="openGLWidget"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="GrainSize_label">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Grain Size:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QSpinBox" name="GrainCount_spinBox">
+      <property name="maximum">
+       <number>99999</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QDoubleSpinBox" name="GrainSize_doubleSpinBox"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="GrainCount_label">
+      <property name="text">
+       <string>Grain Amount:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="Simulate_button">
+      <property name="text">
+       <string>Simulate</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="GrainLength_label">
+      <property name="text">
+       <string>Grain Length</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QDoubleSpinBox" name="GrainLength_doubleSpinBox"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="GrainDistribution_label">
+      <property name="text">
+       <string>Grain Distribution:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QDoubleSpinBox" name="GrainDistribution_doubleSpinBox"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLabel" name="TargetPorosity_label">
+      <property name="text">
+       <string>Target Porosity:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QDoubleSpinBox" name="TargetPorosity_doubleSpinBox"/>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLabel" name="Timer_label">
+      <property name="text">
+       <string>Timer</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLabel" name="TimerValue_label">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QPushButton" name="SaveImage_button">
+      <property name="text">
+       <string>Save Image</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1016</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKOpenGLNativeWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>qvtkopenglnativewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
